@@ -3,10 +3,32 @@
         {
             "username": "testUser",
             "password": "password123",
-            "balance": 1000.00,
+            "balance": 0.20,
+            "spending": 0.00,
+            "budgetLeft": -3.00,
+            "accountNumber": "04-00-03 • 48507921",
             "transactions": [
-                { "date": "2024-11-01", "type": "Deposit", "amount": 500.00 },
-                { "date": "2024-11-02", "type": "Withdrawal", "amount": 100.00 }
+                {
+                    "title": "Max plan",
+                    "date": "Tomorrow",
+                    "amount": 17.00,
+                    "declined": false
+                },
+                {
+                    "title": "Apple",
+                    "note": "Declined, you didn't have £0.99",
+                    "declined": true
+                },
+                {
+                    "title": "Max plan",
+                    "note": "You didn't have £17.",
+                    "declined": true
+                },
+                {
+                    "title": "Madforit",
+                    "note": "Declined, you didn't have £23.75",
+                    "declined": true
+                }
             ]
         }
     ]
