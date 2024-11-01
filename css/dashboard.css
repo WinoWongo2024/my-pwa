@@ -1,0 +1,176 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-header {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4285f4;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    font-size: 1.5rem;
+}
+
+/* Dashboard main styling */
+.dashboard {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+/* Card overview styling */
+.overview-cards {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card.balance .amount { color: #4CAF50; }
+.card.spending .amount { color: #FF9800; }
+.card.budget .amount { color: #F44336; }
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Payment reminder styling */
+.payment-reminder {
+    background-color: #FFEB3B;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.payment-reminder .message {
+    font-size: 1.1rem;
+}
+
+.payment-reminder .sub-message {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Bank card styling */
+.bank-card {
+    background: linear-gradient(135deg, #FF5722, #F44336);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.bank-card .bank-name {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.bank-card .account-number {
+    font-size: 0.9rem;
+    color: #f9dcdc;
+}
+
+.bank-card .card-balance {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bank-card .card-balance span {
+    font-size: 0.9rem;
+}
+
+.bank-card .btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.bank-card .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Activity styling */
+.activity {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.activity-date,
+.activity-amount {
+    color: #555;
+}
+
+.activity-note {
+    color: #e53935;
+    font-size: 0.9rem;
+}
+
+.activity-item.declined .activity-title {
+    color: #e53935;
+}
