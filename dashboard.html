@@ -4,22 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GR Bank - Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your GR Bank Dashboard</h1>
+    <header class="dashboard-header">
+        <h1>Welcome, User</h1>
     </header>
-    <main>
-        <div class="account-summary">
-            <h2>Account Summary</h2>
-            <p>Balance: $<span id="balance">0.00</span></p>
+    <main class="dashboard">
+        <!-- Account Overview Cards -->
+        <section class="overview-cards">
+            <div class="card balance">
+                <p class="amount">£0.20</p>
+                <p class="description">Personal balance</p>
+            </div>
+            <div class="card spending">
+                <p class="amount">£0.00</p>
+                <p class="description">Spent this month</p>
+            </div>
+            <div class="card budget">
+                <p class="amount">-£3.00</p>
+                <p class="description">Left until budget</p>
+            </div>
+        </section>
+
+        <!-- Payment Reminder -->
+        <div class="payment-reminder">
+            <p class="message">Add money for Max</p>
+            <p class="sub-message">We couldn’t take your payment</p>
         </div>
-        <div class="transaction-history">
-            <h2>Transaction History</h2>
-            <ul id="transaction-list"></ul>
-        </div>
+
+        <!-- Card Section -->
+        <section class="bank-card">
+            <p class="bank-name">GR Bank</p>
+            <p class="account-number">04-00-03 • 48507921</p>
+            <p class="card-balance">£0.00 <span>Balance</span></p>
+            <button class="btn add-money">Add money</button>
+            <button class="btn card-options">Card</button>
+        </section>
+
+        <!-- Activity Section -->
+        <section class="activity">
+            <h2>Activity</h2>
+            <div class="activity-item">
+                <p class="activity-title">Max plan</p>
+                <p class="activity-date">Tomorrow</p>
+                <p class="activity-amount">£17.00</p>
+            </div>
+            <div class="activity-item declined">
+                <p class="activity-title">Apple</p>
+                <p class="activity-note">Declined, you didn't have £0.99</p>
+            </div>
+            <div class="activity-item declined">
+                <p class="activity-title">Max plan</p>
+                <p class="activity-note">You didn't have £17.</p>
+            </div>
+            <div class="activity-item declined">
+                <p class="activity-title">Madforit</p>
+                <p class="activity-note">Declined, you didn't have £23.75</p>
+            </div>
+        </section>
     </main>
-    <script src="js/dashboard.js"></script>
 </body>
 </html>
