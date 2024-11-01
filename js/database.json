@@ -1,0 +1,13 @@
+{
+    "users": [
+        {
+            "username": "testUser",
+            "password": "password123",
+            "balance": 1000.00,
+            "transactions": [
+                { "date": "2024-11-01", "type": "Deposit", "amount": 500.00 },
+                { "date": "2024-11-02", "type": "Withdrawal", "amount": 100.00 }
+            ]
+        }
+    ]
+}
